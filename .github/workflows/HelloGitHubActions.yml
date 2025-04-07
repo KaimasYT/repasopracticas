@@ -1,9 +1,16 @@
 name: HelloGithub
-on: push
+on: 
+    push:
+        branches:
+                - main
 
 jobs:
     build:
         runs-on: ubuntu-latest
+
         steps:
+            - name: Checkout Repos
+              run: actions/checkout@v4
+
             - name: HelloWorld
-              run: echo "Hello GitHub"
+              run: echo "Hello GitHub2"
