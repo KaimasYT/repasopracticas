@@ -1,3 +1,7 @@
+import sys
+import os
+sys.path.append(os.path.abspath("src"))
+
 from src.calculadora import suma, resta
 
 def test_suma():
