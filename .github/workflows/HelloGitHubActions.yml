@@ -10,7 +10,7 @@ jobs:
 
         steps:
             - name: Checkout Repos
-              run: actions/checkout@v4
+              uses: actions/checkout@v4
 
             - name: HelloWorld
               run: echo "Hello GitHub2"
