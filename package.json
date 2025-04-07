@@ -1,0 +1,8 @@
+{
+    "name": "repasopracticas",
+    "version": "1.0.0",
+    "scripts": {
+      "lint": "echo 'No hay linter definido todavía'"
+    }
+  }
+  
