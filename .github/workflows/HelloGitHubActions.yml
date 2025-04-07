@@ -1,1 +1,9 @@
+name: HelloGithub
+on: push
 
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - name: HelloWorld
+              run: echo "Hello GitHub"
