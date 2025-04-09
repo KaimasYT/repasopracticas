@@ -11,6 +11,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
+      - name: Ejecutar tests con cobertura
+        run: |
+          export PYTHONPATH=$PYTHONPATH:$(pwd)/src
+          pytest --cov=src --cov-report=term-missing
+      
       - name: Instalar dependencias
         run: |
           python -m pip install --upgrade pip
